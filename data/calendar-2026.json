@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "year": 2026,
+    "timezone": "Asia/Taipei",
+    "verified_at": "2026-09-16",
+    "version": "2026.1",
+    "scope": "2026 年全國性國定假日；政府補假另列，民間須勞雇協商。",
+    "statutory_holiday_count": 16,
+    "government_non_working_day_count": 120,
+    "government_announcement_date": "2025-06-13",
+    "government_document_number": "行政院院授人培字第11430248312號函",
+    "sources": [
+      {
+        "id": "dgpa_2026",
+        "title": "行政院人事行政總處：中華民國一百一十五年政府行政機關辦公日曆表",
+        "url": "https://www.dgpa.gov.tw/information?pid=12573&uid=41",
+        "scope": "2026 實際節日日期、政府補假規則、紀念日及節日實施條例摘錄"
+      },
+      {
+        "id": "dgpa_announcement",
+        "title": "行政院修正114年及核定115年政府行政機關辦公日曆表",
+        "url": "https://www.dgpa.gov.tw/information?pid=12574&uid=82",
+        "scope": "政府2026年總放假120日；行政機關與民間適用範圍不同"
+      },
+      {
+        "id": "mol_holidays",
+        "title": "勞動部：國定假日及補假",
+        "url": "https://www.mol.gov.tw/1607/28162/28166/28218/28226/81488/",
+        "source_updated_at": "2026-05-06",
+        "scope": "16日國定假日、補假由勞雇協商、原住民族歲時祭儀與投票日條件"
+      },
+      {
+        "id": "mol_transfer",
+        "title": "勞動部：國定假日一年有幾天？國定假日遇到例假或休息日及調移說明",
+        "url": "https://www.mol.gov.tw/1607/28752/28866/30873/post",
+        "source_updated_at": "2026-04-23",
+        "scope": "國定假日遇週休仍應另補假；調移須個別勞工同意"
+      }
+    ]
+  },
+  "labor_policy": {
+    "id": "fixed_weekend",
+    "normal_working_hours": 8,
+    "working_weekdays": [0, 1, 2, 3, 4],
+    "rest_weekday": 5,
+    "regular_day_off_weekday": 6,
+    "automatic_substitutions": false,
+    "note": "週一至五工作、週六休息日、週日例假為本專案預設班制，不是法定唯一安排。"
+  },
+  "statutory_holidays": [
+    {"date": "2026-01-01", "name": "中華民國開國紀念日", "source": "dgpa_2026"},
+    {"date": "2026-02-15", "name": "小年夜", "source": "dgpa_2026"},
+    {"date": "2026-02-16", "name": "除夕", "source": "dgpa_2026"},
+    {"date": "2026-02-17", "name": "春節初一", "source": "dgpa_2026"},
+    {"date": "2026-02-18", "name": "春節初二", "source": "dgpa_2026"},
+    {"date": "2026-02-19", "name": "春節初三", "source": "dgpa_2026"},
+    {"date": "2026-02-28", "name": "和平紀念日", "source": "dgpa_2026"},
+    {"date": "2026-04-04", "name": "兒童節", "source": "dgpa_2026"},
+    {"date": "2026-04-05", "name": "清明節", "source": "dgpa_2026"},
+    {"date": "2026-05-01", "name": "勞動節", "source": "dgpa_2026"},
+    {"date": "2026-06-19", "name": "端午節", "source": "dgpa_2026"},
+    {"date": "2026-09-25", "name": "中秋節", "source": "dgpa_2026"},
+    {"date": "2026-09-28", "name": "孔子誕辰紀念日／教師節", "source": "dgpa_2026"},
+    {"date": "2026-10-10", "name": "國慶日", "source": "dgpa_2026"},
+    {"date": "2026-10-25", "name": "臺灣光復暨金門古寧頭大捷紀念日", "source": "dgpa_2026"},
+    {"date": "2026-12-25", "name": "行憲紀念日", "source": "dgpa_2026"}
+  ],
+  "government_calendar": {
+    "scope": "行政機關參考資料，不自動匯入民間員工排班或薪資",
+    "weekend_weekdays": [5, 6],
+    "make_up_workdays": [],
+    "substitutions": [
+      {"date": "2026-02-20", "substitute_for": "2026-02-15", "name": "小年夜補假"},
+      {"date": "2026-02-27", "substitute_for": "2026-02-28", "name": "和平紀念日補假"},
+      {"date": "2026-04-03", "substitute_for": "2026-04-04", "name": "兒童節補假"},
+      {"date": "2026-04-06", "substitute_for": "2026-04-05", "name": "清明節補假"},
+      {"date": "2026-10-09", "substitute_for": "2026-10-10", "name": "國慶日補假"},
+      {"date": "2026-10-26", "substitute_for": "2026-10-25", "name": "臺灣光復暨金門古寧頭大捷紀念日補假"}
+    ]
+  }
+}

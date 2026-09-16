@@ -1,0 +1,6 @@
+.git
+runtime
+backups
+__pycache__
+*.sqlite*
+.env

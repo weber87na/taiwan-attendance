@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="description" content="台灣出勤管理：打卡、排班、請假、簽核與勞健保試算。">
+    <title>勤日｜台灣出勤管理</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要內容</a>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <section id="login-view" class="login-layout" hidden>
+      <div class="login-story">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">勤</span><span>勤日 <small>TAIWAN ATTENDANCE</small></span></div>
+        <div class="login-copy"><span class="eyebrow">讓每一天，都有清楚的紀錄</span><h1>安心上班，<br>準時下班。</h1><p>從今天的第一張打卡，<br>到團隊的排班與請假，讓工作日常井然有序。</p></div>
+        <div class="login-decoration" aria-hidden="true"><span class="decor-card">09:00 <b>開始新的一天</b><i>出勤紀錄已就緒</i></span><span class="decor-dot"></span></div>
+        <p class="login-caption">台灣行事曆 · 出勤管理 · 勞健保試算</p>
+      </div>
+      <div class="login-panel"><div class="login-box">
+        <span class="eyebrow">WELCOME BACK</span><h2>登入工作空間</h2><p class="muted">使用管理員建立的帳號開始。</p>
+        <form id="login-form" class="stack">
+          <label>帳號<input name="username" autocomplete="username" required autofocus placeholder="輸入帳號"></label>
+          <label>密碼<input name="password" type="password" autocomplete="current-password" required placeholder="輸入密碼"></label>
+          <p id="login-error" class="inline-error" role="alert" hidden></p>
+          <button type="submit" class="button primary full">登入</button>
+        </form>
+        <p class="setup-note">第一次使用？請先由管理員執行 <code>python -m attendance init</code> 建立帳號。系統沒有預設帳號或密碼。</p>
+      </div></div>
+    </section>
+    <div id="app-view" class="app-shell" hidden>
+      <aside class="sidebar">
+        <a class="brand" href="#dashboard"><span class="brand-mark" aria-hidden="true">勤</span><span>勤日<small>TAIWAN ATTENDANCE</small></span></a>
+        <p class="nav-label">我的工作空間</p><nav id="nav" aria-label="主要導覽"></nav>
+        <div class="sidebar-foot"><span class="status-dot"></span>時區 Asia / Taipei<p>把工作日常，照顧好。</p></div>
+      </aside>
+      <div class="workspace">
+        <header class="topbar"><div class="topbar-location"><span class="tiny-logo">勤</span><span>出勤管理工作空間</span></div><div class="user-menu"><span id="user-avatar" class="avatar" aria-hidden="true"></span><div><strong id="user-name"></strong><small id="user-role"></small></div><button id="logout" class="button ghost small">登出</button></div></header>
+        <main id="main" tabindex="-1"><div class="page-header"><div><span id="page-eyebrow" class="eyebrow">WORKSPACE</span><h1 id="page-title">今日總覽</h1><p id="page-description" class="muted"></p></div><label id="month-control" class="month-control">查詢月份<input id="month-picker" type="month"></label></div><div id="view" aria-live="polite"></div><footer class="page-footer">2026 年規則版本 · 出勤以實際排班為準；試算結果供覆核參考。</footer></main>
+      </div>
+    </div>
+    <div id="boot-loading" class="boot-loading" role="status"><span class="brand-mark" aria-hidden="true">勤</span><p>正在載入工作空間…</p></div>
+    <noscript>此出勤系統需要 JavaScript。請啟用後重新整理頁面。</noscript>
+  </body>
+</html>
