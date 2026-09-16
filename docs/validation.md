@@ -13,8 +13,10 @@
 | 獨立審查 | 分筆請假總額、整段漏卡、休息不足提示已修復並復驗 |
 | 備份 | SQLite完整性檢查、資料一致、禁止覆蓋與Linux檔案權限通過 |
 | 瀏覽器操作與視覺驗證 | 未完成；雲端瀏覽器無法連線本機頁面，本機未安裝瀏覽器；已進行前端語法和介接靜態檢查 |
-| Windows、Python3.13 | GitHub Actions已配置，尚未在遠端執行 |
+| GitHub Actions：Ubuntu／Windows、Python3.12／3.13 | 四組矩陣全部通過；每組74項測試及JavaScript語法檢查成功 |
 | Docker | 已提供Dockerfile，尚未實際建置映像 |
+
+遠端驗證：[GitHub Actions run 35073389572](https://github.com/weber87na/taiwan-attendance/actions/runs/35073389572)，測試程式版本 `63124f312b3fe65b90c4c697a93c729e5b51f2dd`。發布前另修正SQLite連線關閉及測試初始化日期，避免Windows暫存檔清除失敗及日期推移造成測試失敗。
 
 ## 測試分布
 
